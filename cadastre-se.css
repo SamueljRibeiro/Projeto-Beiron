@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 3.5s ease;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+   left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -3;
+}
+video:not(:empty) {
+  opacity: 1;
+}
+
+.imagem {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img_forma {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  right: 1px;
+}
+
+.ComeCadastre-se {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  width: 453px;
+  max-width: 100%;
+  min-height: 692px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ComeCadastre-se__Ajustes {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+.ComeCadastre-se__Ajustes__Forma {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.ComrCadastre-se_Preencher {
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  background: transparent;
+  border: 2px solid;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: black;
+  padding: 12px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 80%;
+  outline: none;
+  right: 50px;
+  position: absolute;
+  transform: translateY(0px);
+}
+
+.Email {
+  background: transparent;
+  border: 2px solid;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: black;
+  padding: 12px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 80%;
+  outline: none;
+  right: 50px;
+  position: absolute;
+  transform: translateY(45px);
+}
+
+.Senha {
+  background: transparent;
+  border: 2px solid;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: black;
+  padding: 12px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 80%;
+  outline: none;
+  right: 50px;
+  position: absolute;
+  transform: translateY(89px);
+}
+
+.Senha2 {
+  background: transparent;
+  border: 2px solid;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: black;
+  padding: 12px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 80%;
+  outline: none;
+  right: 50px;
+  position: absolute;
+  transform: translateY(135px);
+}
+
+.PosTitulo {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BeleDescriçao {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 55px;
+  position: absolute;
+  transform: translateY(-240px);
+}
+
+.ave {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 50px;
+  position: absolute;
+  transform: translateY(-180px);
+}
+.cade {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 50px;
+  position: absolute;
+  transform: translateY(-120px);
+}
+.sua {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 50px;
+  position: absolute;
+  transform: translateY(-60px);
+}
+
+.PosBotao {
+  position: absolute;
+  right: 150px;
+  transform: translateY(265px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Botao {
+  background: transparent;
+  border: 2px solid;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 20pt;
+  padding: 15px 38px;
+  border-radius: 39px;
+}
+
+.place::placeholder {
+  color: black;
+}
+
+.Botao:hover {
+  padding: 11px 40px;
+  filter: drop-shadow(0px 0px 12px);
+}
+
+.iconemago {
+  position: absolute;
+  right: 62px;
+  transform: translateY(-px);
+}
+
+.iconelivro {
+  position: absolute;
+  right: 62px;
+  transform: translateY(63px);
+}
+
+.olhoAberto {
+  position: absolute;
+  right: 65px;
+  transform: translateY(122px);
+}
+
+.olhoFechado {
+  position: absolute;
+  right: 65px;
+  transform: translateY(184px);
+}
+
+.ERRO {
+  z-index: 10;
+  width: 400px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #cea876;
+  border-radius: 25px;
+  border: 5px solid black;
+  opacity: 0;
+  transition: opacity 6s ease-in-out;
+  display: block;
+}
+
+.erroC {
+  font-family: "Pirata One", system-ui;
+  color: black;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 8vh;
+}
+
+.loginsp {
+  z-index: 5;
+  display: none;
+  position: absolute;
+  right: 210px;
+  transform: translateY(44px);
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: brown;
+}
+
+.emailsp {
+  z-index: 5;
+  position: absolute;
+  display: none;
+  right: 273px;
+  transform: translateY(89px);
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: brown;
+}
+
+.senhasp {
+  z-index: 5;
+  position: absolute;
+  display: none;
+  right: 184px;
+  transform: translateY(133px);
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: brown;
+}
+
+.senha2sp {
+  z-index: 5;
+  position: absolute;
+  display: none;
+  right: 274px;
+  transform: translateY(179px);
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: brown;
+}
+.input-error {
+  border-color: brown; /* Mostra a borda vermelha ao ocorrer erro */
+}
+
+.voltar-Login {
+  z-index: 5;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  color: black;
+  position: absolute;
+  right: 20px;
+  transform: translateY(336px);
+  font-size: 20px;
+}
+
+.voltar-Login:hover {
+  transform: translateY(334px);
+  filter: drop-shadow(0px 0px 12px);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid black;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-text-fill-color: black !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 530px) {
+  .BeleDescriçao {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-148px);
+  }
+  .ave {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-115px);
+  }
+
+  .cade {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-80px);
+  }
+  .sua {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    transform: translateY(-49px);
+  }
+  .ComrCadastre-se_Preencher {
+    padding: 8px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login {
+    background: transparent;
+    border: 2px solid;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: black;
+    padding: 9px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 80%;
+    outline: none;
+    right: 50px;
+    position: absolute;
+    transform: translateY(-26px);
+  }
+
+  .Email {
+    background: transparent;
+    border: 2px solid;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: black;
+    padding: 9px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 80%;
+    outline: none;
+    right: 50px;
+    position: absolute;
+    transform: translateY(10px);
+  }
+
+  .Senha {
+    background: transparent;
+    border: 2px solid;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: black;
+    padding: 9px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 80%;
+    outline: none;
+    right: 50px;
+    position: absolute;
+    transform: translateY(47px);
+  }
+
+  .Senha2 {
+    background: transparent;
+    border: 2px solid;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: black;
+    padding: 9px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 80%;
+    outline: none;
+    right: 50px;
+    position: absolute;
+    transform: translateY(84px);
+  }
+
+  .PosBotao {
+    position: absolute;
+    right: 139px;
+    transform: translateY(179px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Botao {
+    background: transparent;
+    border: 2px solid;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 11pt;
+    padding: 11px 38px;
+    border-radius: 39px;
+  }
+
+  .iconemago {
+    position: absolute;
+    right: 62px;
+    transform: translateY(-29px);
+  }
+
+  .iconelivro {
+    position: absolute;
+    right: 62px;
+    transform: translateY(25px);
+  }
+
+  .olhoAberto {
+    position: absolute;
+    right: 65px;
+    transform: translateY(77px);
+  }
+
+  .olhoFechado {
+    position: absolute;
+    right: 65px;
+    transform: translateY(130px);
+  }
+
+  .ERRO {
+    z-index: 10;
+    width: 250px;
+    max-width: 100%;
+    padding: 15px;
+    background-color: #cea876;
+    border-radius: 25px;
+    border: 5px solid black;
+    opacity: 0;
+    transition: opacity 6s ease-in-out;
+    display: block;
+  }
+
+  .erroC {
+    font-family: "Pirata One", system-ui;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 8vh;
+  }
+
+  .loginsp {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    right: 162px;
+    transform: translateY(10px);
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: brown;
+    font-size: 12px;
+  }
+
+  .emailsp {
+    z-index: 5;
+    position: absolute;
+    display: none;
+    right: 223px;
+    transform: translateY(46px);
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: brown;
+    font-size: 12px;
+  }
+
+  .senhasp {
+    z-index: 5;
+    position: absolute;
+    display: none;
+    right: 140px;
+    transform: translateY(85px);
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: brown;
+    font-size: 12px;
+  }
+
+  .senha2sp {
+    z-index: 5;
+    position: absolute;
+    display: none;
+    right: 227px;
+    transform: translateY(120px);
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: brown;
+    font-size: 12px;
+  }
+  .input-error {
+    border-color: brown; /* Mostra a borda vermelha ao ocorrer erro */
+  }
+
+  .voltar-Login {
+    z-index: 5;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    color: black;
+    position: absolute;
+    right: 50px;
+    transform: translateY(230px);
+    font-size: 15px;
+  }
+
+  .voltar-Login:hover {
+    transform: translateY(237px);
+    filter: drop-shadow(0px 0px 12px);
+  }
+}
